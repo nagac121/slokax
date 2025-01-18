@@ -16,8 +16,8 @@ Make sure you have the following installed on your machine:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/nagac121/sloka-frontend.git
-   cd sloka-frontend
+   git clone https://github.com/nagac121/slokax.git
+   cd slokax
    ```
 
 First, run the development server:
