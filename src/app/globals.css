@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  background-color: #f8f9fa;
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Full viewport height */
+}
+
+/* Main container for the layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Main content area styles */
+.content {
+  flex: 1; 
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Footer styles */
+.footer {
+  align-items: center;
+  color: #fff; /* White text */
+  background-color: #343a40; /* Dark background */
+  display: flex;
+  flex: 0 0 auto;
+  font-size: 1rem; /* Adjust text size */
+  height: 5%; /* 5% of viewport height */
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Reset styles for consistency */
+html,
+body {
+  height: 100%; /* Full viewport height */
+  margin: 0;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  flex: 0 0 200px;
+  background-color: #e9ecef;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Additional styles for better appearance */
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+li div {
+  cursor: pointer;
+}
+
+li div:hover {
+  text-decoration: underline;
+}
+
+/* Responsive font sizes and padding */
+@media (max-width: 768px) {
+  /* Small screens */
+  body {
+    font-size: 0.875rem; /* Smaller font size for small screens */
+  }
+
+  .footer {
+    font-size: 0.875rem; /* Smaller font size for small screens */
+  }
+
+  .header {
+    font-size: 1.25rem; /* Smaller header font size for small screens */
+  }
+
+  .content {
+    padding: 10px; /* Reduced padding for small screens */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Medium screens */
+  body {
+    font-size: 1rem; /* Medium font size for medium screens */
+  }
+
+  .footer {
+    font-size: 1rem; /* Medium font size for medium screens */
+  }
+
+  .header {
+    font-size: 1.375rem; /* Medium header font size for medium screens */
+  }
+
+  .content {
+    padding: 15px; /* Reduced padding for medium screens */
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Large screens */
+  body {
+    font-size: 1.125rem; /* Larger font size for large screens */
+  }
+
+  .footer {
+    font-size: 1.125rem; /* Larger font size for large screens */
+  }
+
+  .header {
+    font-size: 1.5rem; /* Larger header font size for large screens */
+  }
+
+  .content {
+    padding: 20px; /* Default padding for large screens */
+  }
+}
